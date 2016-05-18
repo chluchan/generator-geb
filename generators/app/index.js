@@ -41,13 +41,21 @@ module.exports = yeoman.Base.extend({
       );
     }
 
+    this.fs.copy(
+      this.templatePath('gitignore'),
+      this.destinationPath('.gitignore')
+    );
+
+    this.fs.copy(
+      this.templatePath('editorconfig'),
+      this.destinationPath('.editorconfig')
+    );
+
     writeFile('gradle/wrapper/gradle-wrapper.jar');
     writeFile('gradle/wrapper/gradle-wrapper.properties');
     writeFile('gradle/ci.gradle');
     writeFile('gradle/idea.gradle');
     writeFile('gradle/osSpecificDownloads.gradle');
-    writeFile('.gitignore');
-    writeFile('.editorconfig');
     writeFile('build.gradle');
     writeFile('gradlew');
     writeFile('gradlew.bat');
