@@ -4,10 +4,11 @@ var assert = require('yeoman-assert');
 var helpers = require('yeoman-test');
 
 describe('generator-geb:app', function () {
-  before(function () {
+  before(function (done) {
     return helpers.run(path.join(__dirname, '../generators/app'))
       .withPrompts({basePackage: 'com.mycompany'})
-      .toPromise();
+      .toPromise()
+      .then(invoke(done));
   });
 
   it('creates your gradle wrapper and build files', function () {
