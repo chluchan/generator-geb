@@ -9,23 +9,7 @@
     "url": "https://github.com/chluchan/generator-geb"
   },
   "files": [
-    "generators/templates/gradle/wrapper/gradle-wrapper.jar",
-    "generators/templates/gradle/wrapper/gradle-wrapper.properties",
-    "generators/templates/gradle/ci.gradle",
-    "generators/templates/gradle/idea.gradle",
-    "generators/templates/gradle/osSpecificDownloads.gradle",
-    "generators/templates/src",
-    "generators/templates/.editorconfig",
-    "generators/templates/.gitignore",
-    "generators/templates/build.gradle",
-    "generators/templates/gradlew",
-    "generators/templates/gradlew.bat",
-    "generators/index.js",
-    "generators/src/test/groovy/com/company/component/library/LandingPage.groovy",
-    "generators/src/test/groovy/com/company/Config.groovy",
-    "generators/src/test/groovy/com/company/tests/LandingPageTest.groovy",
-    "generators/src/test/resources/com/company/Profiles.groovy",
-    "generators/src/test/resources/GebConfig.groovy"
+    "generators"
   ],
   "main": "generators/index.js",
   "keywords": [
