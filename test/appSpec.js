@@ -3,6 +3,12 @@ var path = require('path');
 var assert = require('yeoman-assert');
 var helpers = require('yeoman-test');
 
+function invoke(f) {
+  return function () {
+    f();
+  };
+}
+
 describe('generator-geb:app', function () {
   before(function (done) {
     return helpers.run(path.join(__dirname, '../generators/app'))
