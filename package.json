@@ -1,6 +1,6 @@
 {
   "name": "generator-geb",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Generates a Geb Automation project",
   "homepage": "",
   "author": {
@@ -29,12 +29,12 @@
   ],
   "main": "generators/index.js",
   "keywords": [
+    "yeoman-generator",
     "Geb",
     "Selenium",
     "Webdriver",
     "Gradle",
-    "Groovy",
-    "yeoman-generator"
+    "Groovy"
   ],
   "dependencies": {
     "yeoman-generator": "^0.23.0",
