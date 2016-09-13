@@ -3,12 +3,14 @@ import org.openqa.selenium.firefox.FirefoxDriver
 import org.openqa.selenium.phantomjs.PhantomJSDriver
 
 waiting {
-	timeout = 5
+	timeout = 10
 }
 
 environments {
 	chrome {
-		driver = { new ChromeDriver() }
+    ChromeOptions options = new ChromeOptions()
+    options.addArguments("--disable-extensions")
+		driver = { new ChromeDriver(options) }
 	}
 
 	firefox {
